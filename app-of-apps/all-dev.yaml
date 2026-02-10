@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-of-apps
+spec:
+  destination:
+    name: dev
+    namespace: test
+  project: default
+  source:
+    path: apps
+    repoURL: https://github.com/slodygin/argocd.git
+  syncPolicy:
+    automated: {}

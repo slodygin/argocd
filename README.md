@@ -29,5 +29,5 @@ argocd app list
 argocd app set APPNAME -p image.tag=dev-latest
 ```
 
-# How to limit k8s permissions for argocd user
+# How to limit k8s permissions for argocd k8s user
 https://github.com/argoproj/argo-cd/issues/5389#issuecomment-808977225
